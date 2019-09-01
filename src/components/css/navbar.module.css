@@ -1,0 +1,29 @@
+.nav_wrapper {
+    width: 100vw;
+    height: 150px;
+
+}
+.container{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_wrapper--text{
+    text-decoration: none;
+    color: #fff;
+    font-size: 70px;
+    align-self: center;
+    font-family: 'UnifrakturCook', cursive;
+    
+}
+
+.underline{
+    /* width: 100vw;
+    height: 30px;
+    background-image: url("https://www.colourbox.com/preview/2259705-seamless-fire-and-flame-border-on-black-background.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover; */
+}

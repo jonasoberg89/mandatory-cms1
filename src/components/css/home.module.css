@@ -1,0 +1,25 @@
+.container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+}
+
+.container__left{
+    width: 20vw;
+    height: 80vh;
+}
+.container__middle{
+    width: 60vw;
+    height: 80vh;
+    background-image: url("https://i.pinimg.com/originals/dc/ef/f6/dceff6eb8639f46f68f25c36125bdbeb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+}
+.container__right{
+    width: 20vw;
+    height: 80vh;
+}
