@@ -3,31 +3,33 @@
     height: 80vh;
     display: flex;
 }
-
+a{
+    color: black;
+    text-decoration: none;
+}
 .container__left{
     width: 20vw;
     height: 80vh;
+    background: black;
+    opacity: 0.6;
 }
 .container__middle{
     width: 60vw;
     height: 80vh;
-    background-image: url("../image/postbackground.jpg");
+    background-image: url("../image/warcraft_alliance_movie_wallpaper_by_deathonabun_d85mf0y-pre.jpg");
     background-position:center;
     background-repeat:no-repeat;
     background-size: cover;
     opacity: 0.9;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow:auto;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     
 }
 .container__post{
     margin-top: 30px;
     align-self: center;
     width: 80%;
-    height: 25%;
     background-image: url("../image/dceff6eb8639f46f68f25c36125bdbeb.jpg");
     background-position:center;
     background-repeat:no-repeat;
@@ -62,10 +64,18 @@
     padding: 10px;
     align-self: center;
 }
+.container__post--author{
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    align-self: center;
+}
 .container__post--text{
     width: 80%;
-    height:40%;
+    height:30%;
     margin-left: 40px;
+    margin-top: 10px;
 }
 .container__post--info{
     font-size: 16px;
@@ -97,4 +107,6 @@
 .container__right{
     width: 20vw;
     height: 80vh;
+    background: black;
+    opacity: 0.6;
 }

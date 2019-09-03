@@ -1,0 +1,65 @@
+.container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+}
+.container__left{
+    width: 20vw;
+    height: 80vh;
+}
+
+
+.container__pargement{
+    width: 60vw;
+    height: 80vh;
+    background-image: url("../image/dceff6eb8639f46f68f25c36125bdbeb.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+}
+.container__author--header{
+width: 100%;
+height: 20%;
+display: flex;
+justify-content: center;
+}
+.container__author--text{
+    font-size: 70px;
+    align-self: center;
+    font-family: 'UnifrakturCook', cursive;
+}
+.container__author--body{
+    width: 100%;
+    height: 80%;
+   display: flex;
+}
+.container__author--left{
+    width: 50%;
+    height: 100%;
+
+}
+.container__author--left img{
+    width: 60%;
+    margin-left: 20px;
+
+}
+.container__author--right{
+    width: 50%;
+    height: 100%;
+}
+
+.container__right{
+    width: 20vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.container__author--description{
+    font-size: 22px;
+    font-family: 'UnifrakturCook', cursive;
+    padding:30px;
+}
