@@ -11,13 +11,88 @@
 .container__middle{
     width: 60vw;
     height: 80vh;
-    background-image: url("https://i.pinimg.com/originals/dc/ef/f6/dceff6eb8639f46f68f25c36125bdbeb.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: url("../image/postbackground.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
     background-size: cover;
+    opacity: 0.9;
     overflow-y: scroll;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     
+}
+.container__post{
+    margin-top: 30px;
+    align-self: center;
+    width: 80%;
+    height: 25%;
+    background-image: url("../image/dceff6eb8639f46f68f25c36125bdbeb.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    justify-content: center;
+ 
+}
+.container__post--header{
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+.container__post--title{
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    align-self: center;
+    cursor: pointer;
+}
+.container__post--mark{
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 30px;
+    margin: 0;
+    padding: 10px;
+    align-self: center;
+}
+.container__post--date{
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px;
+    align-self: center;
+}
+.container__post--text{
+    width: 80%;
+    height:40%;
+    margin-left: 40px;
+}
+.container__post--info{
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+.container__post--read{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.container__post--button{
+    align-self: flex-end;
+    height:30px;
+    background: #690101;
+    color: #EFBC00;
+    font-weight: 100;
+    font-size: 16px;
+    padding: 4px 40px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    border: 3px solid #3F464F;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 4px;
 }
 .container__right{
     width: 20vw;
