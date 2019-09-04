@@ -9,12 +9,12 @@ function Author(props) {
 
 
     useEffect(() => {
-        axios.post("http://localhost:8080/api/collections/get/author?token=c252c1524e3ea41df06cf4d0f473ea,&filter[_id]=" + authorId)
-
+        if(!authorId) return;
+            axios.post("http://localhost:8080/api/collections/get/author?token=c252c1524e3ea41df06cf4d0f473ea,&filter[_id]=" + authorId)
             .then(res => {
                 let response = res.data.entries;
                 console.log(response[0])
-                setData(response[0]);
+                setData(response);
                 setPicture(response[0].photo.path)
 
             })
@@ -27,14 +27,32 @@ function Author(props) {
                
     }, [authorId]);
 
+    useEffect(() => {
+        if(authorId) return;
+            axios.post("http://localhost:8080/api/collections/get/author?token=c252c1524e3ea41df06cf4d0f473ea,&filter[_id]=")
+            .then(res => {
+                let response = res.data.entries;
+                console.log(response[0])
+                setData(response);
+                setPicture(response[0].photo.path)
 
-        return(
-          
-         <div className={styles.container}>
-            <div className={styles.container__left}></div>
-            <div className={styles.container__pargement}>
+            })
+            .catch(err => {
+                console.log(err);
+            })
+            return () => {
+                console.log('unmount')
+              }
+               
+    }, []);
+
+    
+    function render(val){
+
+        return (
+                <div className={styles.container__pargement}>
                 <div className={styles["container__author--header"]}>
-                    <h1 className={styles["container__author--text"]}>{data.name}</h1>
+                    <h1 className={styles["container__author--text"]}>{val.name}</h1>
                 </div>
                 <div className={styles["container__author--body"]}>
                     <div className={styles["container__author--left"]}>
@@ -42,11 +60,21 @@ function Author(props) {
                     </div>
                     <div className={styles["container__author--right"]}>
                         <p className={styles["container__author--description"]}>
-                            {data.description}
+                            {val.description}
                         </p>
                     </div>
                 </div>
             </div>
+        )
+    }
+
+        return(
+          
+         <div className={styles.container}>
+            <div className={styles.container__left}></div>
+                {data.map(val =>{
+                   return render(val)
+                })}
             <div className={styles.container__right}></div>
         </div>
           
@@ -54,4 +82,4 @@ function Author(props) {
         )
 }
 
-export default Author
+export default Author 

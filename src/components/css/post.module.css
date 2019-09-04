@@ -1,0 +1,77 @@
+.container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+}
+.container__left{
+    width: 20vw;
+    height: 80vh;
+}
+.container__pargement{
+    width: 60vw;
+    height: 80vh;
+    background-image: url("../image/dceff6eb8639f46f68f25c36125bdbeb.jpg");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+}
+.container__post--header{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container__post--text{
+    font-size: 40px;
+    align-self: center;
+    font-family: 'UnifrakturCook', cursive;    
+}
+.container__post--infotext{
+    align-self: center;
+    font-family: 'UnifrakturCook', cursive;    
+    font-size: 30px;
+    margin: 0;
+}
+.container__post--body{
+    width: 100%;
+    height: 80%;
+   display: flex;
+    justify-content: center;
+}
+.container__post--left{
+    width: 50%;
+    height: 100%;
+}
+ img{
+    width: 200px;
+    margin-left: 20px;
+
+}
+.container__post--right{
+    width: 50%;
+   
+    white-space: normal;
+    overflow: hidden;
+}
+
+.container__right{
+    width: 20vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+.container__post--description{
+    width: 100%;
+    font-size: 22px;
+    font-family: 'UnifrakturCook', cursive;
+    padding:30px;
+    display: flex;
+    justify-content: space-evenly;
+
+ 
+}
