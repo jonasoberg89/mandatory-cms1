@@ -41,6 +41,7 @@
     height: 80%;
    display: flex;
     justify-content: center;
+
 }
 .container__post--left{
     width: 50%;
@@ -67,11 +68,18 @@
 }
 .container__post--description{
     width: 100%;
-    font-size: 22px;
+    font-size: 26px;
     font-family: 'UnifrakturCook', cursive;
     padding:30px;
     display: flex;
     justify-content: space-evenly;
+}
+.container__post--date{
+    width: 90%;
+    color:#fff;
+    font-size: 25px;
+    font-family: 'UnifrakturCook', cursive;
+    display: flex;
+    justify-content: flex-end
 
- 
 }

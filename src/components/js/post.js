@@ -10,10 +10,11 @@ function Post(props) {
     let md = new MarkdownIt();
 
     useEffect(() => {
-        axios.post("http://localhost:8080/api/collections/get/post?token=c252c1524e3ea41df06cf4d0f473ea,&filter[_id]=" + postId)
+        axios.post("http://localhost:8080/api/collections/get/post?token=d92bf97d6c592da6b09c17068ef40b&filter[_id]=" + postId)
 
             .then(res => {
                 let response = res.data.entries;
+                console.log(response);
                 setData(response[0]);
                 setAuthor(response[0].author[0].display)
             })
@@ -24,7 +25,7 @@ function Post(props) {
             console.log('unmount')
         }
 
-    }, []);
+    }, [postId]);
 
     function handleIterate(str) {
         if (!str) return;
@@ -47,6 +48,9 @@ function Post(props) {
                     <div className={styles["container__post--body"]}>
                         <p dangerouslySetInnerHTML={handleIterate(data.body)} className={styles["container__post--description"]}></p>
                        
+                    </div>
+                    <div className={styles["container__post--date"]}>
+                        <p>{data.published_on }</p>
                     </div>
                 </div>
 

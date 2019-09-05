@@ -9,8 +9,7 @@ function Author(props) {
 
 
     useEffect(() => {
-        if(!authorId) return;
-            axios.post("http://localhost:8080/api/collections/get/author?token=c252c1524e3ea41df06cf4d0f473ea,&filter[_id]=" + authorId)
+            axios.post("http://localhost:8080/api/collections/get/author?token=d92bf97d6c592da6b09c17068ef40b" + authorId)
             .then(res => {
                 let response = res.data.entries;
                 console.log(response[0])
@@ -26,26 +25,6 @@ function Author(props) {
               }
                
     }, [authorId]);
-
-    useEffect(() => {
-        if(authorId) return;
-            axios.post("http://localhost:8080/api/collections/get/author?token=c252c1524e3ea41df06cf4d0f473ea,&filter[_id]=")
-            .then(res => {
-                let response = res.data.entries;
-                console.log(response[0])
-                setData(response);
-                setPicture(response[0].photo.path)
-
-            })
-            .catch(err => {
-                console.log(err);
-            })
-            return () => {
-                console.log('unmount')
-              }
-               
-    }, []);
-
     
     function render(val){
 
