@@ -1,8 +1,8 @@
 <?php
  return array (
-  'name' => 'Svampar',
+  'name' => 'author',
   'label' => '',
-  '_id' => 'Svampar5d662b45326bf',
+  '_id' => 'author5d6e23cd6567a',
   'fields' => 
   array (
     0 => 
@@ -25,9 +25,9 @@
     ),
     1 => 
     array (
-      'name' => 'info',
+      'name' => 'description',
       'label' => '',
-      'type' => 'textarea',
+      'type' => 'text',
       'default' => '',
       'info' => '',
       'group' => '',
@@ -43,27 +43,9 @@
     ),
     2 => 
     array (
-      'name' => 'img',
+      'name' => 'photo',
       'label' => '',
       'type' => 'image',
-      'default' => '',
-      'info' => '',
-      'group' => '',
-      'localize' => false,
-      'options' => 
-      array (
-      ),
-      'width' => '1-1',
-      'lst' => true,
-      'acl' => 
-      array (
-      ),
-    ),
-    3 => 
-    array (
-      'name' => 'poison',
-      'label' => '',
-      'type' => 'boolean',
       'default' => '',
       'info' => '',
       'group' => '',
@@ -80,8 +62,8 @@
   ),
   'sortable' => false,
   'in_menu' => false,
-  '_created' => 1566976837,
-  '_modified' => 1566982059,
+  '_created' => 1567499213,
+  '_modified' => 1567511978,
   'color' => '',
   'acl' => 
   array (
